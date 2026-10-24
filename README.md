@@ -64,6 +64,14 @@ Documents as a table, with inline editing.
 
 Windows, macOS, and Linux.
 
+## Support
+
+Mongrove is free. If it saves you time, you can support further development:
+
+[Donate via Stripe](https://buy.stripe.com/4gM5kubSU3ibaXH5nX7AI07)
+
+No features are unlocked — this is voluntary support for the developer.
+
 ## Early access
 
 This is soft launch. Feedback is especially useful on:
@@ -77,6 +85,6 @@ This is soft launch. Feedback is especially useful on:
 
 ## About
 
-Donationware. The core stays free forever (including the Aggregate Builder). Supporting the project unlocks additional features over time.
+Donationware. The core stays free forever. Donations are voluntary support for continued development.
 
 Stack: Tauri 2 + Svelte 5 + MongoDB Rust driver. Credentials stored in the OS keychain. SOCKS5 proxy supported.
