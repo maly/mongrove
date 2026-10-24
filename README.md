@@ -12,6 +12,7 @@ Built for people who write aggregation pipelines every day and want something de
 | **macOS download** | **5.4 MB** | ~170 MB | large |
 | **Linux download** | **6 MB** (.deb) | ~123 MB | — |
 | **RAM (idle, Windows)** | **~47 MB** | 400+ MB | hundreds of MB |
+| **Startup (Windows)** | **~1 s** | several seconds (typically 3–5 s) | similar or slower |
 
 Mongrove is roughly 50× smaller than Compass on Windows and uses about 8–10× less RAM. It starts quickly and stays out of the way.
 
