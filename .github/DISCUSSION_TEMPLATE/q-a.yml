@@ -1,0 +1,26 @@
+title: "Q: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask anything about using Mongrove.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What are you trying to do and what is happening?
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Mongrove version (optional)
+      placeholder: e.g. 0.1.0
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps or context (optional)
+      description: Anything that helps reproduce or understand the situation.

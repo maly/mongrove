@@ -1,0 +1,23 @@
+title: "Idea: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea for Mongrove? Especially interested in things that would make daily aggregation work nicer.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What would you like to see?
+      placeholder: Describe the feature or improvement...
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it would help
+      description: What problem does it solve or what workflow does it improve?
+    validations:
+      required: true
