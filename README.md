@@ -18,6 +18,38 @@ Mongrove is roughly 50× smaller than Compass on Windows and uses about 8–10×
 
 Numbers measured on Mongrove v0.1.0. Compass and Studio 3T figures are typical current values.
 
+## Screenshots
+
+### Aggregate Builder
+
+Drag & drop stages, live preview of each stage, export the pipeline to code.
+
+![Aggregate Builder](docs/aggregate-builder.png)
+
+### Main window
+
+Dense layout with connection tree and collection data.
+
+![Main window](docs/main-window.png)
+
+### Table view
+
+Documents as a table, with inline editing.
+
+![Table view](docs/table-view.png)
+
+### Visual Explain
+
+![Explain](docs/explain.png)
+
+### Schema tab
+
+![Schema](docs/schema.png)
+
+### Export to language
+
+![Export](docs/export.png)
+
 ## Key features
 
 - **Visual Aggregate Builder** — drag & drop stages, live preview of each stage, export the pipeline to code
