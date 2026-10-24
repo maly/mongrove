@@ -4,6 +4,19 @@
 
 Built for people who write aggregation pipelines every day and want something denser than Compass and lighter (and cheaper) than Studio 3T.
 
+## Why Mongrove
+
+| | Mongrove | Compass | Studio 3T |
+|---|---|---|---|
+| **Windows download** | **3.6 MB** | ~180 MB | ~370–420 MB |
+| **macOS download** | **5.4 MB** | ~170 MB | large |
+| **Linux download** | **6 MB** (.deb) | ~123 MB | — |
+| **RAM (idle, Windows)** | **~47 MB** | 400+ MB | hundreds of MB |
+
+Mongrove is roughly 50× smaller than Compass on Windows and uses about 8–10× less RAM. It starts quickly and stays out of the way.
+
+Numbers measured on Mongrove v0.1.0. Compass and Studio 3T figures are typical current values.
+
 ## Key features
 
 - **Visual Aggregate Builder** — drag & drop stages, live preview of each stage, export the pipeline to code
