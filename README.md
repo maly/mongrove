@@ -4,6 +4,14 @@
 
 Built for people who write aggregation pipelines every day and want something denser than Compass and lighter (and cheaper) than Studio 3T.
 
+## Key features
+
+- **Visual Aggregate Builder** — drag & drop stages, live preview of each stage, export the pipeline to code
+- **Visual Explain** — see how your queries and pipelines actually run
+- **Schema tab** — explore document shape without leaving the app
+- **Readonly mode** — safe for production connections
+- **Flexible data views** — table, JSON, and tree. Edit documents directly in the table
+
 ## Why Mongrove
 
 | | Mongrove | Compass | Studio 3T |
@@ -49,14 +57,6 @@ Documents as a table, with inline editing.
 ### Export to language
 
 ![Export](docs/export.png)
-
-## Key features
-
-- **Visual Aggregate Builder** — drag & drop stages, live preview of each stage, export the pipeline to code
-- **Visual Explain** — see how your queries and pipelines actually run
-- **Schema tab** — explore document shape without leaving the app
-- **Readonly mode** — safe for production connections
-- **Flexible data views** — table, JSON, and tree. Edit documents directly in the table
 
 ## Download
 
