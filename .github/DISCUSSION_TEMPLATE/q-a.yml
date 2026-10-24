@@ -10,6 +10,7 @@ body:
     attributes:
       label: Your question
       description: What are you trying to do and what is happening?
+      placeholder: Clear description of the question or problem
     validations:
       required: true
 
@@ -22,5 +23,6 @@ body:
   - type: textarea
     id: steps
     attributes:
-      label: Steps or context (optional)
-      description: Anything that helps reproduce or understand the situation.
+      label: Extra context (optional)
+      description: Steps, error messages, or anything else that helps understand the situation.
+      placeholder: Optional details

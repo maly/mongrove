@@ -3,14 +3,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        Have an idea for Mongrove? Especially interested in things that would make daily aggregation work nicer.
+        Ideas are welcome, especially anything that would make everyday aggregation work smoother.
 
   - type: textarea
     id: idea
     attributes:
       label: The idea
       description: What would you like to see?
-      placeholder: Describe the feature or improvement...
+      placeholder: Describe the feature or improvement
     validations:
       required: true
 
@@ -18,6 +18,7 @@ body:
     id: why
     attributes:
       label: Why it would help
-      description: What problem does it solve or what workflow does it improve?
+      description: What problem does it solve or which workflow does it improve?
+      placeholder: Current pain point or desired workflow
     validations:
       required: true

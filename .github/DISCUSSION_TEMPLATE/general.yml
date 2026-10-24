@@ -3,30 +3,30 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for trying Mongrove. This is soft launch — real feedback on the Aggregate Builder and UI density is especially useful.
-
-  - type: textarea
-    id: feedback
-    attributes:
-      label: Your feedback
-      description: What worked, what didn't, or what surprised you?
-      placeholder: |
-        The Aggregate Builder feels...
-        UI density is...
-    validations:
-      required: true
+        Soft launch feedback is welcome. The Aggregate Builder and overall UI density are the two things we're watching most closely right now.
 
   - type: dropdown
     id: area
     attributes:
-      label: Main area
+      label: What is this mostly about?
       options:
         - Aggregate Builder
         - UI density / overall feel
         - Data views (table / JSON / tree)
-        - Explain / Schema
-        - Connection / performance
+        - Explain or Schema
+        - Connection or performance
         - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: What worked, what felt off, or what surprised you?
+      placeholder: |
+        The Aggregate Builder feels...
+        UI density is...
     validations:
       required: true
 
