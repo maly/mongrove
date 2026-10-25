@@ -2,6 +2,7 @@
 
 **Lightweight desktop MongoDB client.** Dense UI. Visual Aggregate Builder.
 
+**Public alpha (v0.2.0).** Use at your own risk.  
 Built for people who write aggregation pipelines every day and want something denser than Compass and lighter (and cheaper) than Studio 3T.
 
 ## Key features
@@ -86,9 +87,12 @@ Mongrove is free. If it saves you time, you can support further development:
 
 No features are unlocked — this is voluntary support for the developer.
 
-## Early access
+## Public alpha
 
-This is soft launch. Feedback is especially useful on:
+This is a public alpha. Things may break, change, or lose data.  
+**Use at your own risk.** Do not point it at production data you cannot afford to lose.
+
+Feedback is especially useful on:
 
 - how the Aggregate Builder feels compared to what you use now
 - UI density (too sparse? too cramped?)
