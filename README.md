@@ -7,6 +7,7 @@ Built for people who write aggregation pipelines every day and want something de
 ## Key features
 
 - **Visual Aggregate Builder** — drag & drop stages, live preview of each stage, export the pipeline to code
+- **Data Model / ERD** — generate an entity-relationship diagram from collections, with inferred relationships and export to PNG/JSON
 - **Visual Explain** — see how your queries and pipelines actually run
 - **Schema tab** — explore document shape without leaving the app
 - **Readonly mode** — safe for production connections
@@ -33,6 +34,12 @@ Numbers measured on Mongrove v0.1.0. Compass and Studio 3T figures are typical c
 Drag & drop stages, live preview of each stage, export the pipeline to code.
 
 ![Aggregate Builder](docs/aggregate-builder.png)
+
+### Data Model / ERD
+
+Generate a diagram of collections, fields, and relationships. Export as PNG or JSON. Changes stay visual — nothing is written to the database.
+
+![Data Model](docs/model.png)
 
 ### Main window
 
