@@ -33,6 +33,8 @@ Numbers measured on Mongrove v0.1.0. Compass and Studio 3T figures are typical c
 
 Drag & drop stages, live preview of each stage, export the pipeline to code.
 
+![Aggregate Builder](docs/aggregate-builder.gif)
+
 ![Aggregate Builder](docs/aggregate-builder.png)
 
 ### Data Model / ERD
