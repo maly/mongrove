@@ -65,6 +65,11 @@ Documents as a table, with inline editing.
 
 ![Export](docs/export.png)
 
+## More
+
+- [Features](FEATURES.md) — what’s already done
+- [Roadmap](ROADMAP.md) — what’s next (moves fast)
+
 ## Download
 
 [Latest releases](https://github.com/maly/mongrove/releases)
