@@ -83,7 +83,7 @@ Windows, macOS, and Linux.
 If macOS blocks it, run:
 
 ```bash
-xattr -cr /Applications/Mongrove.app
+xattr -rd com.apple.quarantine /Applications/Mongrove.app
 ```
 
 Then open it normally.
