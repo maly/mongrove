@@ -79,6 +79,15 @@ Documents as a table, with inline editing.
 
 Windows, macOS, and Linux.
 
+**macOS:** The build is not signed yet (working on Apple Developer ID).  
+If macOS blocks it, run:
+
+```bash
+xattr -cr /Applications/Mongrove.app
+```
+
+Then open it normally.
+
 ## Support
 
 Mongrove is free. If it saves you time, you can support further development:
