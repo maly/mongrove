@@ -2,20 +2,28 @@
 
 Open work. This list moves fast — items often land the same day they are written.
 
-## Table View
+## Table View & documents
 
-- **Nested detail (dive)** — open one nested object or array in a side panel without changing the main table
-- **Expand nested fields to columns** — turn an object column into dotted-path columns, with undo
+- **Find in results (Ctrl+F)** — search the current page, highlight matches
+- **Date picker + timestamp columns** — date picker for Date fields; treat numeric columns as timestamps
+- **Bulk update selected documents** — multi-select and update with a pre-filled `_id $in` filter
+- **Collection History** — local undo for updates/deletes (inverse operations, conflict check)
 
-## Aggregate Builder
+## Aggregate & Views
 
-- **Per-stage input/output** — see input and output of each stage, run the pipeline only up to a selected stage, temporarily disable stages
+- **Create View from Aggregate** — save the current pipeline as a View
+- **Open View as Aggregate** — open a View definition in the Aggregate Builder
 
-## Connections & ops
+## Connections & organization
 
-- **Replica Set support** — explicit host list, topology after connect, read preference with tag sets and max staleness
-- **Copy collection / database across connections** — one-shot copy of data (and optionally indexes) between connections
-- **View / Kill in-progress operations** — list current operations and kill them
+- **Connection groups / folders** — organize connections
+- **Rename collection**
+- **Copy connection string** (with or without password)
+- **Snippet library** — save and insert query / aggregate snippets; bookmarks in a separate window
+
+## Ops
+
+- **Light profiler / slow ops history** — recent slow operations (configurable threshold)
 
 ---
 

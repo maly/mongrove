@@ -4,12 +4,22 @@ Done. These are in the current builds.
 
 ## Core
 
-- Connection management (including SOCKS5 proxy)
+- Connection management (including SOCKS5 proxy and SSH tunnel)
+- Replica Set support (host list, topology, read preference)
 - Database and collection tree
-- Collection tabs
+- Create database
+- Collection tabs with close others / close right
 - Table, JSON, and tree views
 - Inline document editing in the table
+- Add / Duplicate document (JSON editor or form from schema)
+- Expand nested fields to columns (dotted path) and undive
+- Nested detail (dive) for a single document in a side panel
+- Saved column layouts per collection
+- Export current Table View result (CSV / JSON)
+- Export / Import multiple collections
+- Copy collection or database across connections
 - IntelliShell
+- Keyboard shortcuts + Help menu
 - Context menus
 - Readonly mode (safe for production)
 - Query bookmarks
@@ -20,6 +30,7 @@ Done. These are in the current builds.
 
 - Visual Aggregate Builder — drag & drop stages
 - Live preview of each stage
+- Per-stage input/output and run-to-stage
 - Export pipeline to code
 - IntelliSense in the Aggregate Builder
 
@@ -42,6 +53,7 @@ Done. These are in the current builds.
 
 - Users & roles
 - Real-time server stats
+- View / Kill in-progress operations
 - SSH tunnel (local port forward, key or password)
 
 ---
