@@ -2,6 +2,8 @@
 
 **Lightweight desktop MongoDB client.** Dense UI. Visual Aggregate Builder.
 
+**Website:** [maly.github.io/mongrove](https://maly.github.io/mongrove)
+
 **Public alpha (v0.2.0).** Use at your own risk.  
 Built for people who write aggregation pipelines every day and want something denser than Compass and lighter (and cheaper) than Studio 3T.
 
