@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mongrove — Lightweight MongoDB Client</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #79c0ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.4rem; margin: 2rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+    h3 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+    p, li { margin-bottom: 0.75rem; }
+    .subtitle { color: var(--muted); font-size: 1.1rem; margin-bottom: 1.5rem; }
+    .badge {
+      display: inline-block;
+      background: #1f6feb;
+      color: white;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); text-decoration: underline; }
+    ul { padding-left: 1.2rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.6rem 0.8rem;
+      text-align: left;
+    }
+    th { background: var(--surface); }
+    img, video {
+      max-width: 100%;
+      border-radius: 6px;
+      margin: 1rem 0;
+      border: 1px solid var(--border);
+    }
+    .buttons { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 1.5rem 0; }
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .btn-primary { background: var(--accent); color: #0f1117; }
+    .btn-primary:hover { background: var(--accent-hover); text-decoration: none; }
+    .btn-secondary { background: var(--surface); border: 1px solid var(--border); color: var(--text); }
+    .btn-secondary:hover { border-color: var(--muted); text-decoration: none; }
+    .warning {
+      background: #3d2b00;
+      border-left: 4px solid #d29922;
+      padding: 0.8rem 1rem;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+    code {
+      background: var(--surface);
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    pre {
+      background: var(--surface);
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    pre code { background: none; padding: 0; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">Public alpha v0.2.0</span>
+    <h1>Mongrove</h1>
+    <p class="subtitle">Lightweight desktop MongoDB client. Dense UI. Visual Aggregate Builder.</p>
+
+    <p>Built for people who write aggregation pipelines every day and want something denser than Compass and lighter (and cheaper) than Studio 3T.</p>
+
+    <div class="buttons">
+      <a class="btn btn-primary" href="https://github.com/maly/mongrove/releases">Download</a>
+      <a class="btn btn-secondary" href="https://github.com/maly/mongrove">GitHub</a>
+      <a class="btn btn-secondary" href="https://buy.stripe.com/4gM5kubSU3ibaXH5nX7AI07">Donate</a>
+    </div>
+
+    <h2>Key features</h2>
+    <ul>
+      <li><strong>Visual Aggregate Builder</strong> — drag & drop stages, live preview of each stage, export the pipeline to code</li>
+      <li><strong>Data Model / ERD</strong> — generate an entity-relationship diagram from collections, with inferred relationships and export to PNG/JSON</li>
+      <li><strong>Visual Explain</strong> — see how your queries and pipelines actually run</li>
+      <li><strong>Schema tab</strong> — explore document shape without leaving the app</li>
+      <li><strong>Readonly mode</strong> — safe for production connections</li>
+      <li><strong>Flexible data views</strong> — table, JSON, and tree. Edit documents directly in the table</li>
+    </ul>
+
+    <h2>Why Mongrove</h2>
+    <table>
+      <tr><th></th><th>Mongrove</th><th>Compass</th><th>Studio 3T</th></tr>
+      <tr><td><strong>Windows download</strong></td><td><strong>3.6 MB</strong></td><td>~180 MB</td><td>~370–420 MB</td></tr>
+      <tr><td><strong>macOS download</strong></td><td><strong>5.4 MB</strong></td><td>~170 MB</td><td>large</td></tr>
+      <tr><td><strong>Linux download</strong></td><td><strong>6 MB</strong> (.deb)</td><td>~123 MB</td><td>—</td></tr>
+      <tr><td><strong>RAM (idle, Windows)</strong></td><td><strong>~47 MB</strong></td><td>400+ MB</td><td>hundreds of MB</td></tr>
+      <tr><td><strong>Startup (Windows)</strong></td><td><strong>~1 s</strong></td><td>several seconds (typically 3–5 s)</td><td>similar or slower</td></tr>
+    </table>
+    <p>Mongrove is roughly 50× smaller than Compass on Windows and uses about 8–10× less RAM. It starts quickly and stays out of the way.</p>
+    <p><em>Numbers measured on Mongrove v0.1.0. Compass and Studio 3T figures are typical current values.</em></p>
+
+    <h2>Screenshots</h2>
+
+    <h3>Aggregate Builder</h3>
+    <p>Drag & drop stages, live preview of each stage, export the pipeline to code.</p>
+    <img src="aggregate-builder.gif" alt="Aggregate Builder">
+    <img src="aggregate-builder.png" alt="Aggregate Builder">
+
+    <h3>Data Model / ERD</h3>
+    <p>Generate a diagram of collections, fields, and relationships. Export as PNG or JSON. Changes stay visual — nothing is written to the database.</p>
+    <img src="model.png" alt="Data Model">
+
+    <h3>Main window</h3>
+    <p>Dense layout with connection tree and collection data.</p>
+    <img src="main-window.png" alt="Main window">
+
+    <h3>Table view</h3>
+    <p>Documents as a table, with inline editing.</p>
+    <img src="table-view.png" alt="Table view">
+
+    <h3>Visual Explain</h3>
+    <img src="explain.png" alt="Explain">
+
+    <h3>Schema tab</h3>
+    <img src="schema.png" alt="Schema">
+
+    <h3>Export to language</h3>
+    <img src="export.png" alt="Export">
+
+    <h2>Download</h2>
+    <p><a href="https://github.com/maly/mongrove/releases">Latest releases</a> — Windows, macOS, and Linux.</p>
+
+    <div class="warning">
+      <strong>macOS:</strong> The build is not signed yet (working on Apple Developer ID).<br>
+      If macOS blocks it, run:
+      <pre><code>xattr -rd com.apple.quarantine /Applications/Mongrove.app</code></pre>
+      Then open it normally.
+    </div>
+
+    <h2>Support</h2>
+    <p>Mongrove is free. If it saves you time, you can support further development:</p>
+    <p><a class="btn btn-secondary" href="https://buy.stripe.com/4gM5kubSU3ibaXH5nX7AI07">Donate via Stripe</a></p>
+    <p>No features are unlocked — this is voluntary support for the developer.</p>
+
+    <h2>Public alpha</h2>
+    <div class="warning">
+      This is a public alpha. Things may break, change, or lose data.<br>
+      <strong>Use at your own risk.</strong> Do not point it at production data you cannot afford to lose.
+    </div>
+    <p>Feedback is especially useful on:</p>
+    <ul>
+      <li>how the Aggregate Builder feels compared to what you use now</li>
+      <li>UI density (too sparse? too cramped?)</li>
+      <li>anything that blocks daily use</li>
+    </ul>
+    <p><a href="https://github.com/maly/mongrove/discussions">GitHub Discussions</a> · <a href="https://github.com/maly/mongrove/issues">GitHub Issues</a></p>
+
+    <h2>About</h2>
+    <p>Donationware. The core stays free forever. Donations are voluntary support for continued development.</p>
+    <p>Stack: Tauri 2 + Svelte 5 + MongoDB Rust driver. Credentials stored in the OS keychain. SOCKS5 proxy supported.</p>
+
+    <footer>
+      <a href="https://github.com/maly/mongrove">GitHub</a> ·
+      <a href="FEATURES.md">Features</a> ·
+      <a href="ROADMAP.md">Roadmap</a>
+    </footer>
+  </div>
+</body>
+</html>
