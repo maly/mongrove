@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features — Mongrove</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #79c0ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.3rem; margin: 2rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+    p, li { margin-bottom: 0.6rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); text-decoration: underline; }
+    ul { padding-left: 1.2rem; }
+    .back { margin-bottom: 1.5rem; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="index.html">← Back</a></p>
+    <h1>Features</h1>
+    <p>Done. These are in the current builds.</p>
+
+    <h2>Core</h2>
+    <ul>
+      <li>Connection management (including SOCKS5 proxy and SSH tunnel)</li>
+      <li>Replica Set support (host list, topology, read preference)</li>
+      <li>Database and collection tree</li>
+      <li>Create database</li>
+      <li>Collection tabs with close others / close right</li>
+      <li>Table, JSON, and tree views</li>
+      <li>Inline document editing in the table</li>
+      <li>Add / Duplicate document (JSON editor or form from schema)</li>
+      <li>Expand nested fields to columns (dotted path) and undive</li>
+      <li>Nested detail (dive) for a single document in a side panel</li>
+      <li>Saved column layouts per collection</li>
+      <li>Export current Table View result (CSV / JSON)</li>
+      <li>Export / Import multiple collections</li>
+      <li>Copy collection or database across connections</li>
+      <li>IntelliShell</li>
+      <li>Keyboard shortcuts + Help menu</li>
+      <li>Context menus</li>
+      <li>Readonly mode (safe for production)</li>
+      <li>Query bookmarks</li>
+      <li>Import / Export CSV</li>
+      <li>Views</li>
+    </ul>
+
+    <h2>Aggregate Builder</h2>
+    <ul>
+      <li>Visual Aggregate Builder — drag & drop stages</li>
+      <li>Live preview of each stage</li>
+      <li>Per-stage input/output and run-to-stage</li>
+      <li>Export pipeline to code</li>
+      <li>IntelliSense in the Aggregate Builder</li>
+    </ul>
+
+    <h2>Data exploration</h2>
+    <ul>
+      <li>Schema tab (sample-based field types and stats)</li>
+      <li>Generate JSON Schema from the Schema tab</li>
+      <li>Validation rules (view and edit JSON Schema validators)</li>
+      <li>Data Model / ERD — generate a diagram of collections, fields, and relationships; export PNG/JSON</li>
+      <li>Visual Explain</li>
+      <li>Visual Find Query Builder</li>
+    </ul>
+
+    <h2>Developer tools</h2>
+    <ul>
+      <li>IntelliSense in IntelliShell and query editor</li>
+      <li>Export query to language</li>
+      <li>Sampling controls</li>
+    </ul>
+
+    <h2>Admin & ops</h2>
+    <ul>
+      <li>Users & roles</li>
+      <li>Real-time server stats</li>
+      <li>View / Kill in-progress operations</li>
+      <li>SSH tunnel (local port forward, key or password)</li>
+    </ul>
+
+    <footer>
+      <a href="roadmap.html">Roadmap</a> · <a href="index.html">Back</a>
+    </footer>
+  </div>
+</body>
+</html>
