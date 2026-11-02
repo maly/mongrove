@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadmap — Mongrove</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #79c0ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.3rem; margin: 2rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+    p, li { margin-bottom: 0.6rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); text-decoration: underline; }
+    ul { padding-left: 1.2rem; }
+    .back { margin-bottom: 1.5rem; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="index.html">← Back</a></p>
+    <h1>Roadmap</h1>
+    <p>Open work. This list moves fast — items often land the same day they are written.</p>
+
+    <h2>Table View & documents</h2>
+    <ul>
+      <li><strong>Find in results (Ctrl+F)</strong> — search the current page, highlight matches</li>
+      <li><strong>Date picker + timestamp columns</strong> — date picker for Date fields; treat numeric columns as timestamps</li>
+      <li><strong>Bulk update selected documents</strong> — multi-select and update with a pre-filled <code>_id $in</code> filter</li>
+      <li><strong>Collection History</strong> — local undo for updates/deletes (inverse operations, conflict check)</li>
+    </ul>
+
+    <h2>Aggregate & Views</h2>
+    <ul>
+      <li><strong>Create View from Aggregate</strong> — save the current pipeline as a View</li>
+      <li><strong>Open View as Aggregate</strong> — open a View definition in the Aggregate Builder</li>
+    </ul>
+
+    <h2>Connections & organization</h2>
+    <ul>
+      <li><strong>Connection groups / folders</strong> — organize connections</li>
+      <li><strong>Rename collection</strong></li>
+      <li><strong>Copy connection string</strong> (with or without password)</li>
+      <li><strong>Snippet library</strong> — save and insert query / aggregate snippets; bookmarks in a separate window</li>
+    </ul>
+
+    <h2>Ops</h2>
+    <ul>
+      <li><strong>Light profiler / slow ops history</strong> — recent slow operations (configurable threshold)</li>
+    </ul>
+
+    <footer>
+      <a href="features.html">Features</a> · <a href="index.html">Back</a>
+    </footer>
+  </div>
+</body>
+</html>
