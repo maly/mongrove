@@ -4,7 +4,7 @@
 
 **Website:** [maly.github.io/mongrove](https://maly.github.io/mongrove)
 
-**Public alpha (v0.2.0).** Use at your own risk.  
+**Public alpha (v0.5.0).** Use at your own risk.  
 Built for people who write aggregation pipelines every day and want something denser than Compass and lighter (and cheaper) than Studio 3T.
 
 ## Key features
@@ -20,15 +20,15 @@ Built for people who write aggregation pipelines every day and want something de
 
 | | Mongrove | Compass | Studio 3T |
 |---|---|---|---|
-| **Windows download** | **3.6 MB** | ~180 MB | ~370–420 MB |
-| **macOS download** | **5.4 MB** | ~170 MB | large |
-| **Linux download** | **6 MB** (.deb) | ~123 MB | — |
-| **RAM (idle, Windows)** | **~47 MB** | 400+ MB | hundreds of MB |
-| **Startup (Windows)** | **~1 s** | several seconds (typically 3–5 s) | similar or slower |
+| **Windows download** | **~18 MB** | ~180 MB | ~370–420 MB |
+| **macOS download** | **~8 MB** | ~170 MB | large |
+| **Linux download** | **~13 MB** | ~123 MB | — |
+| **RAM (idle)** | **~55 MB** | 400+ MB | hundreds of MB |
+| **Startup** | **fast** | several seconds (typically 3–5 s) | similar or slower |
 
-Mongrove is roughly 50× smaller than Compass on Windows and uses about 8–10× less RAM. It starts quickly and stays out of the way.
+Mongrove is roughly 10× smaller than Compass on Windows and uses about 7–8× less RAM. It starts quickly and stays out of the way.
 
-Numbers measured on Mongrove v0.1.0. Compass and Studio 3T figures are typical current values.
+Numbers measured on Mongrove v0.5.0 (pure Rust + GPUI). Compass and Studio 3T figures are typical current values.
 
 ## Screenshots
 
