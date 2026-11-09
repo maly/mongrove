@@ -116,4 +116,4 @@ Feedback is especially useful on:
 
 Donationware. The core stays free forever. Donations are voluntary support for continued development.
 
-Stack: Tauri 2 + Svelte 5 + MongoDB Rust driver. Credentials stored in the OS keychain. SOCKS5 proxy supported.
+Stack: pure Rust + GPUI + GPUI Kit Components + MongoDB Rust driver. Credentials stored in the OS keychain. SOCKS5 proxy supported.
